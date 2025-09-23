@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Form</title>
+</head>
+<body>
+  <div>
+    <form>
+      <label for="post">Post:</label>
+      <textarea id="post" name="post" placeholder="Write something..."></textarea>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="">--Select--</option>
+        <option>1 ⭐</option>
+        <option>2 ⭐⭐</option>
+        <option>3 ⭐⭐⭐</option>
+        <option>4 ⭐⭐⭐⭐</option>
+        <option>5 ⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <label for="file">Upload File:</label>
+      <input type="file" id="file" name="file" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Live effect: Floating stars -->
+  <script>
+    for(let i=0; i<20; i++){
+      let star = document.createElement("div");
+      star.innerHTML = "⭐";
+      star.style.position = "absolute";
+      star.style.left = Math.random()*100 + "vw";
+      star.style.top = Math.random()*100 + "vh";
+      star.style.fontSize = Math.random()*20 + 10 + "px";
+      star.style.opacity = Math.random();
+      star.style.animation = "float " + (5+Math.random()*5) + "s linear infinite";
+      document.body.appendChild(star);
+    }
+
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes float {
+        from { transform: translateY(0px); }
+        to { transform: translateY(-100vh); }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+
+</body>
+</html>
