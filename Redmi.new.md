@@ -4,7 +4,7 @@ This project demonstrates a simple and scalable web application architecture usi
 
 ## Architecture Overview
 
-![](Architechure%20daigram.png)
+![](/img/Architechure%20daigram.png)
 
 ### Components
 
@@ -43,7 +43,7 @@ Project
 
 ## 🌐 EC2 (Elastic Compute Cloud)
 
-![](Screenshot%202025-09-16%20174510.png)
+![](/img/Screenshot%202025-09-16%20174510.png)
 
 Tuza t2.micro instance (free tier eligible) web + app server mhanun vaparlay.
 
@@ -63,7 +63,7 @@ Auto Scaling Group (ASG) add kela tar user load handle karta yeil.
 
 ## 📦 S3 (Simple Storage Service)
 
-![](Screenshot%202025-09-16%20174533.png)
+![](/img/Screenshot%202025-09-16%20174533.png)
 
 Bucket name: aclewala
 
@@ -81,7 +81,7 @@ Advantage: Highly durable (99.999999999% durability).
 
 ## 🚀 CloudFront (Content Delivery Network)
 
-![](Screenshot%202025-09-16%20174545-1.png)
+![](/img/Screenshot%202025-09-16%20174545-1.png)
 
 Global CDN je tuzha static content world-wide distribute karto.
 
@@ -100,7 +100,7 @@ Caching rules (images 1 day cache, HTML 5 min cache).
 ## 🛢 RDS (Relational Database Service)
 
 
-![](Screenshot%202025-09-16%20174608.png))
+![](/img/Screenshot%202025-09-16%20174608.png))
 
 Engine: MySQL
 
@@ -153,3 +153,4 @@ Reserved Instance gheun cost kam karu shakto.
 S3 Intelligent-Tiering storage use kar.
 
 CloudFront caching increase kar → data transfer cost kam.
+
